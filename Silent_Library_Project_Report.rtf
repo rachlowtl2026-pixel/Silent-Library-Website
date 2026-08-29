@@ -1,0 +1,93 @@
+{\rtf1\ansi\deff0
+{\fonttbl{\f0 Arial;}{\f1 Georgia;}}
+\paperw11907\paperh16840\margl1440\margr1440\margt1440\margb1440
+\viewkind4\uc1\pard\sa120\sl240\slmult1\f0\fs24
+\qc\f1\fs36\b Silent Library Website\par
+\fs28 Project Report\par
+\pard\qc\f0\fs24\b0 User Interface Design\par
+\par
+\pard\sa120\sl240\slmult1\f0\fs24
+\b Project overview\b0\par
+This report explains the planning, design and development of the Silent Library website. The website was created as a responsive multi-page front-end experience for a community library. It gives visitors a clear path to discover books, learn about events and promotions, locate contact details, and understand the library's privacy practices. The project uses HTML for structure, CSS for visual design and interaction, and Bootstrap for responsive layout behaviour.\par
+\par
+\b Table of contents\b0\par
+1. Introduction\par
+2. Project objectives and requirements\par
+3. Information architecture\par
+4. Visual design system\par
+5. Page development\par
+6. Responsive implementation\par
+7. User experience and animation\par
+8. Testing and validation\par
+9. Conclusion\par
+10. References\par
+\page
+\f1\fs30\b 1. Introduction\par
+\pard\f0\fs24\b0
+Silent Library was designed as a calm, approachable digital presence for a modern neighbourhood library. The intended audience includes regular borrowers, parents looking for children's books, event attendees and new visitors who need practical information. The primary design challenge was to communicate a broad range of library services without making the interface feel crowded. To address this, the site uses generous white space, a small navigation menu and clear calls to action.\par
+\par
+\f1\fs30\b 2. Project objectives and requirements\par
+\pard\f0\fs24\b0
+The core objective was to create a usable and visually consistent website that supports the Silent Library business requirements. The site includes a common header and footer, a landing page, books list, library promotions and events, sitemap, contact page and privacy policy. It was also required to use HTML, CSS and Bootstrap, work well on mobile devices, use a consistent colour scheme and typography, and include motion that improves the user experience.\par
+\par
+\b 2.1 Functional requirements\b0\par
+The website provides six linked HTML pages. The home page introduces the library and directs visitors to the catalogue and event pages. The books page presents a selection of realistic titles and categorises them by reading interest. The events page provides dates, times and venue details as well as a membership promotion. The contact page gives an address, phone number, email address, opening hours, location guidance and a simple enquiry form. The sitemap acts as a simple directory, while the privacy page explains how member information is handled.\par
+\par
+\b 2.2 Non-functional requirements\b0\par
+The site prioritises readability, responsive behaviour, clear navigation and a low-friction browsing experience. Semantic page landmarks such as header, main, footer, navigation, section and article are used to provide a clearer structure for users and assistive technologies. The pages have descriptive titles and a viewport meta tag to support mobile display.\par
+\par
+\f1\fs30\b 3. Information architecture\par
+\pard\f0\fs24\b0
+The information architecture is intentionally shallow. The main header provides the primary routes: Home, Books, Events and Contact. Secondary pages, Sitemap and Privacy Policy, are accessible from the shared footer. This structure ensures that important information is never more than one or two selections away. The home page uses prominent buttons to guide users towards the two key actions: browsing the book collection and viewing upcoming activities.\par
+\par
+\b 3.1 Common header and footer\b0\par
+Every page uses the same Silent Library brand identity in its header and footer. The header contains the library name and navigation links, while the footer repeats key exploration and visitor links. Maintaining these shared elements makes the site predictable and reduces the amount of effort needed to navigate between pages. The active navigation state identifies the current page when the full menu is present.\par
+\par
+\f1\fs30\b 4. Visual design system\par
+\pard\f0\fs24\b0
+The visual identity is based on a quiet library atmosphere. The colour palette uses deep blue-green ink for core text and dark areas, warm off-white for the background, soft sage green for section highlights and coral for emphasis. This combination has sufficient contrast while avoiding the harsh feeling of pure black and white. Coral is reserved for important details, such as category labels, links and selected text, helping users recognise interactive or notable content.\par
+\par
+\b 4.1 Typography\b0\par
+The project uses DM Serif Display for headings and Manrope for body copy. The serif face creates a bookish, editorial character for major messages, while the sans-serif body font remains clear at smaller sizes. Heading sizes use CSS clamp values so that large display text scales smoothly between small screens and desktop layouts. Body copy uses a comfortable line height to improve reading on screens.\par
+\par
+\b 4.2 Layout and components\b0\par
+Bootstrap's responsive container, grid and navigation components organise each page. Reusable CSS classes define buttons, cards, banners, feature blocks and footer elements. For example, book cards share consistent cover areas, metadata and descriptions; event cards use a common date treatment and accent border. This approach improves visual consistency and makes future page updates easier.\par
+\par
+\f1\fs30\b 5. Page development\par
+\pard\f0\fs24\b0
+\b 5.1 Landing page\b0\par
+The landing page introduces Silent Library with a short value statement, a prominent illustration and two calls to action. It also highlights new arrivals, children's reading and digital borrowing, followed by a preview of an upcoming book club. This page is designed to give first-time visitors an overview without requiring them to scroll through a long list of services.\par
+\par
+\b 5.2 Books list\b0\par
+The books page presents six realistic example titles across fiction, nature, young readers, mystery, literary fiction and digital services. Each card has a visual cover treatment, category information, title and a short explanatory description. The grid converts from three columns on larger displays to fewer columns on smaller screens.\par
+\par
+\b 5.3 Events and promotions\b0\par
+The events page uses clearly separated cards for a book club, a children's activity and a writing session. Each card includes date, time, description and location. A contrasting promotional block draws attention to the September membership offer and provides a clear link to the contact page.\par
+\par
+\b 5.4 Contact, sitemap and privacy pages\b0\par
+The contact page combines practical library details with a visible opening-hours panel, location guidance and an enquiry form. The sitemap provides a concise directory of all pages for visitors who prefer direct navigation. The privacy policy explains the information collected by the library, how it is used, how it is protected and how users can ask questions or update their preferences.\par
+\par
+\f1\fs30\b 6. Responsive implementation\par
+\pard\f0\fs24\b0
+Mobile usability was achieved through Bootstrap's mobile-first grid classes and custom media queries. On wide screens, content can sit beside an illustration or form a three-column card grid. At tablet and mobile widths, the layout stacks vertically, preserving readable line lengths and touch-friendly spacing. The navigation uses Bootstrap's collapsible navbar behaviour so that links remain available without occupying excessive screen width. Buttons are large enough to be selected comfortably on touch devices.\par
+\par
+\f1\fs30\b 7. User experience and animation\par
+\pard\f0\fs24\b0
+Small motion effects make the interface feel responsive without distracting from reading. The hero illustration has a slow floating animation, giving the landing page a subtle sense of life. Card components move slightly upward and receive a soft shadow when hovered, signalling that they are interactive. Button colour and position transitions provide immediate feedback when users move over a call to action. These effects use short durations and simple CSS transitions to avoid performance issues and support a calm visual tone.\par
+\par
+\f1\fs30\b 8. Testing and validation\par
+\pard\f0\fs24\b0
+The site should be tested by opening each HTML page in a modern desktop browser and a narrow mobile viewport. Testing should confirm that navigation links lead to the correct pages, the header and footer are available throughout the site, text is readable, forms can be completed and card grids reflow without horizontal scrolling. HTML markup can be checked using the W3C Markup Validation Service. Responsive behaviour can be reviewed using browser developer tools at common breakpoints.\par
+\par
+\f1\fs30\b 9. Conclusion\par
+\pard\f0\fs24\b0
+The Silent Library website meets the requested requirements by providing a coherent, responsive set of pages built with HTML, CSS and Bootstrap. The shared navigation and footer produce a consistent browsing experience, while the chosen colours, typography and reusable components establish a distinct library identity. Responsive layouts and understated interaction effects ensure that the site remains pleasant to use on both large and small screens.\par
+\par
+\f1\fs30\b 10. References\par
+\pard\f0\fs24\b0
+Bootstrap (2026) \i Bootstrap documentation\i0 . Available at: https://getbootstrap.com/docs/ (Accessed: 26 August 2026).\par
+\par
+Google Fonts (2026) \i DM Serif Display and Manrope\i0 . Available at: https://fonts.google.com/ (Accessed: 26 August 2026).\par
+\par
+W3C (2026) \i Markup Validation Service\i0 . Available at: https://validator.w3.org/ (Accessed: 26 August 2026).\par
+}
